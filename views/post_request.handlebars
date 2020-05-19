@@ -1,0 +1,24 @@
+<h1>POST Request Received</h1>
+
+  <table>
+            <th>POST and GET Params</th>
+           {{#each allParams}}
+            <tr>
+             <td>{{this.name}}: {{this.value}}</td>
+             </tr>
+            {{/each}}
+           {{#each getParams}}
+            <tr>
+             <td>{{this.name}}: {{this.value}}</td>
+             </tr>
+            {{/each}}
+        </table>
+<br>
+        <table>
+            <th>Just POST Params</th>
+           {{#each allParams}}
+            <tr>
+             <td>{{this.name}}: {{this.value}}</td>
+             </tr>
+            {{/each}}
+        </table>
